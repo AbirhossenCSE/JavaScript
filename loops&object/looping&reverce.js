@@ -1,33 +1,33 @@
-// // const friends = ['elon', 'bill', 'mark', 'waren'];
+const friends = ['elon', 'bill', 'mark', 'waren'];
 
-// // for(const friend of friends){
-// //     console.log(friend);
+for(const friend of friends){
+    console.log(friend);
     
-// // }
+}
 
-// // for (let i = 0; i < friends.length; i++) {
-// //     console.log(i);
-// //     console.log(friends[i]);  
+for (let i = 0; i < friends.length; i++) {
+    console.log(i);
+    console.log(friends[i]);  
     
-// // }
+}
 
 
 
 
-// // Reverce
-// const numbers = [1, 15, 46, 97, 45, 87, 46,]
-// // console.log(numbers);
+Reverce
+const numbers = [1, 15, 46, 97, 45, 87, 46,]
+console.log(numbers);
 
-// // numbers.reverse();
-// // console.log(numbers);
+numbers.reverse();
+console.log(numbers);
 
-// // const rev_num = [];
-// // for(const num of numbers){
-// //     console.log(num);
-// //     rev_num.unshift(num);
+const rev_num = [];
+for(const num of numbers){
+    console.log(num);
+    rev_num.unshift(num);
     
-// // }
-// // console.log(rev_num);
+}
+console.log(rev_num);
 
 const reversed_numbers = [];
 for (let i = 0; i < numbers.length; i++) {
