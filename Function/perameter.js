@@ -22,6 +22,9 @@ squre(222);
 console.log('-----------');
 squre(403);
 console.log('-----------');
+const br = 10;
+squre(br);
+console.log('-----------');
 
 
 // Add function
@@ -31,3 +34,9 @@ function add(num1, num2) {
     
 }
 add(45, 5);
+console.log('-----------');
+
+const abir = 10;
+const age = 10;
+add(abir, age)
+
