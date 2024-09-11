@@ -58,3 +58,7 @@ function maxNum3(numb1, numb2, numb3){
 
 const max3 = maxNum3(85, 78, 95)
 console.log(max3);
+
+
+const max4 = Math.max(46, 46, 56, 46, 85, 69, 32);
+console.log('max is using Math.max :', max4);
