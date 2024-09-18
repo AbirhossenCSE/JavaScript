@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Welcome to my DOM</h1>
+    </header>
+    <main>
+        <h1>My Awsome DOM</h1>
+        <ul>
+            <li>Jalal</li>
+            <li>Abir</li>
+            <li>Bonobas</li>
+        </ul>
+    </main>
+
+    <!-- JavaScript Connection -->
+     <script src="js/dom.js"></script>
+     <script>
+        const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection);
+
+        for (const li of liCollection){
+            console.log(li.innerText);
+            
+        }
+
+         const allHeading = document.getElementsByTagName('h1');
+         for (const h1 of allHeading){
+            console.log(h1);
+            console.log(h1.innerText);
+            
+         }
+        
+        
+     </script>
 </body>
 </html>
