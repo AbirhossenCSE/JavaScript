@@ -9,33 +9,63 @@
 <body>
     <header>
         <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ut, quasi eaque rerum unde facere labore sunt quibusdam dolores excepturi ducimus hic harum recusandae est deleniti modi sint distinctio suscipit.</p>
     </header>
     <main>
-        <h1>My Awsome DOM</h1>
-        <ul>
-            <li>Jalal</li>
-            <li>Abir</li>
-            <li>Bonobas</li>
-        </ul>
+        <section>
+            <h1>My Awsome DOM</h1>
+            <ul>
+                <li>Jalal</li>
+                <li>Abir</li>
+                <li>Bonobas</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="fruits-title">Fruits I like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="Places-title">Place i visit</h1>
+            <ul>
+                <li class="importent-places">Sundarbon</li>
+                <li class="importent-places">bandorban</li>
+                <li class="importent-places">kataban</li>
+                <li>salban</li>
+            </ul>
+        </section>
     </main>
 
     <!-- JavaScript Connection -->
      <script src="js/dom.js"></script>
      <script>
         const liCollection = document.getElementsByTagName('li');
-        console.log(liCollection);
+        // console.log(liCollection);
 
         for (const li of liCollection){
-            console.log(li.innerText);
+            // console.log(li.innerText);
             
         }
 
          const allHeading = document.getElementsByTagName('h1');
          for (const h1 of allHeading){
-            console.log(h1);
+            // console.log(h1);
             // console.log(h1.innerText);
             
          }
+
+         const fruitsTitle = document.getElementById('fruits-title');
+         fruitsTitle.innerText = 'Change by JS';
+
+         const places = document.getElementsByClassName('importent-places');
+         for (const Place of places){
+            console.log(Place.innerText);
+            
+         }
+         
         
         
      </script>
