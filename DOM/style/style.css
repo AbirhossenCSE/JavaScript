@@ -9,3 +9,13 @@ h1{
 .importent-places{
     color: blue;
 }
+.yellow-bg{
+    background-color: yellowgreen;
+}
+
+.text-size{
+    font-size: 2rem;
+}
+.text-center{
+    text-align: center;
+}
