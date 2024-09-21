@@ -20,7 +20,7 @@
                 <li>Bonobas</li>
             </ul>
         </section>
-        <section>
+        <section class="fruits-container">
             <h1 id="fruits-title">Fruits I like</h1>
             <ul>
                 <li>Apple</li>
@@ -62,9 +62,23 @@
 
          const places = document.getElementsByClassName('importent-places');
          for (const Place of places){
-            console.log(Place.innerText);
+            // console.log(Place.innerText);
             
          }
+
+
+        //  Query selector All
+        const someLi = document.querySelectorAll('.fruits-container li');
+        for(const li of someLi){
+            console.log(li.innerText);
+            
+        }
+
+        const className = document.getElementById('fruits-container');
+        for(const name of className){
+            console.log(name);
+            
+        }
          
         
         
