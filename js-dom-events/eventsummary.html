@@ -8,14 +8,38 @@
 <body>
     <h1>Final Event Handlers</h1>
     <h3 id="handler-status">Defoult Text</h3>
+    <p id="input-text-display">Defoult inpur text</p>
+    <input id="input-field" type="text">
+    <button id="btn-update">Update</button>
+
+    <br><br>
     <button onclick="handOnClick()">Handle event by Add onclick Function</button>
+    <button id="event-lisenter">Handle event by addEventListener</button>
 
     <script>
+        // option 1
         function handOnClick(){
             const handLerStatus = document.getElementById('handler-status');
             handLerStatus.innerText = 'Handled by function attribute';
             
         }
+
+        // option 2
+        document.getElementById('event-lisenter').addEventListener('click', function(){
+            const handLerStatus = document.getElementById('handler-status');
+            handLerStatus.innerText = 'Text updated by addEventLisenter'
+        })
+
+        // option 2: Another input value 
+        document.getElementById('btn-update').addEventListener('click', function(){
+            const inputField = document.getElementById('input-field');
+            const inputText = inputField.value;
+
+            const p = document.getElementById('input-text-display');
+            p.innerText = inputText;
+            inputField.value = '';
+        })
+
     </script>
 </body>
 </html>
