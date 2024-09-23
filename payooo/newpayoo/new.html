@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Home Page</title>
+
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3">
+                <!-- Available Balance -->
+                <div class="stats shadow">
+                    <div class="stat">
+                      <div id="account-balance" class="stat-value">8900</div>
+                      <div class="stat-desc">Available Balance</div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div>
+                    <button id="btn-show-add-money" class="btn btn-lg">Add Money</button>
+                    <button id="btn-show-cash-out" class="btn btn-lg">Cash Out</button>
+                    <button id="btn-show-transaaction" class="btn btn-lg">Transaction</button>
+                </div>
+                <div class="divider"></div>
+
+                <!-- Add Money form -->
+                <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span>Ammount</span>
+                        </label>
+                        <input id="input-add-money" type="text" placeholder="Add cash Ammount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="input-pin-number" type="password" placeholder="Enter pin" class="input input-bordered" autocomplete="off" required />
+                      </div>
+
+                      <div class="form-control mt-6">
+                        <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                      </div>
+                    </form>
+                </div>
+                 <!-- Add money form end -->
+
+                 <!-- cash out -->
+                 <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span>Ammount</span>
+                      </label>
+                      <input id="input-cash-out" type="text" placeholder="Add cash Ammount" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pin</span>
+                      </label>
+                      <input id="input-cash-out-pin" type="password" placeholder="Enter pin" class="input input-bordered" autocomplete="off" required />
+                    </div>
+
+                    <div class="form-control mt-6">
+                      <button id="btn-cash-out" class="btn btn-primary">Cash out</button>
+                    </div>
+                  </form>
+                </div>
+                 <!-- cash out end -->
+
+                 <!-- Transaction -->
+                  <div id="transaction-section" class="hidden">
+                    <h1 class="text-5xl text-center">Histry</h1>
+                  </div>
+                 <!-- Transaction end -->
+              </div>
+            </div>
+          </div>
+    </main>
+
+    <script src="utilities.js"></script>
+    <script src="newaddmoney.js"></script>
+    <script src="cashout.js"></script>
+    <script src="features.js"></script>
+</body>
+</html>
