@@ -5,7 +5,7 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
     const pinNumber = getInputFieldValueById('input-pin-number');
     // console.log(addMoney, pinNumber);
 
-    if (isNaN(addMoney)) {
+    if (isNaN(addMoney) || addMoney <= 0) {
         alert('Failed');
         return;
     }

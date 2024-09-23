@@ -5,7 +5,7 @@ document.getElementById('btn-cash-out').addEventListener('click', function(event
     const pinNumber = getInputFieldValueById('input-cash-out-pin');
     // console.log(addMoney, pinNumber);
 
-    if (isNaN(cashOut)) {
+    if (isNaN(cashOut) || cashOut <= 0) {
         alert('Failed');
         return;
     }
