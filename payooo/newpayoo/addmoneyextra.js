@@ -14,6 +14,7 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
         const balance = getTextFieldValueById('account-balance');
         const newBalance = balance + addMoney;
 
+        // new balance
         document.getElementById('account-balance').innerText = newBalance;
 
         // add to transaction history
