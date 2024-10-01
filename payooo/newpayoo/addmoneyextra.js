@@ -6,7 +6,7 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
     // console.log(addMoney, pinNumber);
 
     if (isNaN(addMoney) || addMoney <= 0) {
-        alert('Failed');
+        alert('Failed! Try Again');
         return;
     }
 
@@ -24,7 +24,7 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
         document.getElementById('transaction-container').appendChild(p);
         
     } else {
-        alert('Failed')
+        alert('Failed! Try Again')
     }
     
 })
